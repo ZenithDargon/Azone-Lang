@@ -56,7 +56,7 @@ AZONE LANG должен разрабатываться как самостоят
 
 ### 3. Архитектура системы
 
-![[azone lang base.drawio.png]]  
+![[images/azone lang base.drawio.png]]  
 
 Расширение компилятора:
 
