@@ -608,7 +608,7 @@ embedded VM
 Предлагаемый формат:
 
 AZONE LANG Specification 0.1 
-AZONE LANG Specification 0.2 
+[[Specification 0.2 | AZONE LANG Specification 0.2 ]]
 AZONE LANG Specification 0.3 
 ... 
 AZONE LANG 1.0
