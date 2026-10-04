@@ -317,8 +317,8 @@ AZONE LANG должен предоставлять контролируемый 
 
 Пример концепции:
 
-pointer<T> 
-reference<T> 
+`pointer<T>`
+`reference<T>` 
 address memory.read(...) 
 memory.write(...)
 
@@ -350,16 +350,20 @@ AZONE LANG должен иметь механизм вызова функций,
 
 Внешняя программа должна иметь возможность концептуально выполнить:
 
+```AZONE
 AzoneVM vm;
 
 vm.load("program.azb"); vm.run();
+```
 
 Также предусматривается возможность:
 
+```AZONE
 vm.registerNativeFunction(...); 
 vm.registerType(...); 
 vm.setGlobal(...); 
 vm.call(...);
+```
 
 Таким образом, AZONE LANG сможет использоваться не только как самостоятельный язык, но и как embedded runtime.
 
@@ -608,8 +612,8 @@ embedded VM
 Предлагаемый формат:
 
 AZONE LANG Specification 0.1 
-[[Specification 0.2 | AZONE LANG Specification 0.2 ]]
-AZONE LANG Specification 0.3 
+[[Specification 0.2 |AZONE LANG Specification 0.2 ]]
+[[Specification 0.3 |AZONE LANG Specification 0.3 ]]
 ... 
 AZONE LANG 1.0
 

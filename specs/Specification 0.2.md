@@ -55,14 +55,18 @@ Unicode разрешается использовать в:
 
 Таким образом:
 
+```AZONE
 int value = 10;
 string message = "Привет!";
+```
 
 разрешено.
 
 Но:
 
+```AZONE
 int количество = 10;
+```
 
 на этапе 0.2 должно приводить к ошибке лексического анализатора.
 
@@ -86,7 +90,9 @@ SourceFile
 
 Простейшая программа:
 
+```AZONE
 print("Hello, AZONE!");
+```
 
 ### 4. Регистрозависимость
 
@@ -122,18 +128,24 @@ LF
 
 Например:
 
+```AZONE
 int value = 10;
+```
 
 Перенос строки на этапе 0.2 не является обязательным разделителем инструкций.
 
 Следовательно: 
 
+```AZONE
 int a = 10;
 int b = 20;
+```
 
 и:
 
+```AZONE
 int a = 10; int b = 20;
+```
 
 эквивалентны.
 
@@ -147,14 +159,18 @@ int a = 10; int b = 20;
 
 Пример:
 
+```AZONE
 int value = 10;
 print(value);
+```
 
 В базовой версии языка автоматическая вставка `;` не используется.
 
 Следовательно:
 
+```AZONE
 int value = 10
+```
 
 является синтаксической ошибкой.
 
@@ -172,7 +188,9 @@ AZONE LANG поддерживает два вида комментариев.
 
 Пример:
 
+```AZONE
 int value = 10; // значение пользователя
+```
 
 Все после `//` до конца строки игнорируется
 
@@ -188,12 +206,14 @@ int value = 10; // значение пользователя
 
 Пример:
 
-`/*
+```AZONE
+/*
 Это многострочный
 комментарий
-`*/`
+*/
 
 int value = 10;
+```
 
 На этапе 0.2 вложенные многострочные комментария не поддерживаются.
 
@@ -481,7 +501,7 @@ u64
 
 Если суффикс отсутствует, тип литерала определяется правилами системы типов.
 
-Точная система вывода типа будет описана в Specification 0.3.
+Точная система вывода типа будет описана в [[Specification 0.3]].
 
 ### 19. Символьные литералы
 
@@ -503,8 +523,10 @@ u64
 
 Пример:
 
+```AZONE
 char letter = 'A';
 char newline = '\n'
+```
 
 ### 20. Строковые литералы
 
@@ -524,11 +546,15 @@ char newline = '\n'
 
 Пример:
 
+```AZONE
 string message = "Hello, AZONE!";
+```
 
 Unicode разрешён:
 
+```AZONE
 string message = "Привет, AZONE";
+```
 
 ### 21. Многострочные строки
 
@@ -536,10 +562,12 @@ string message = "Привет, AZONE";
 
 Например:
 
+```AZONE
 string text = "
 Hello
 World
 ";
+```
 
 является ошибкой.
 
@@ -554,8 +582,10 @@ false
 
 Пример:
 
+```AZONE
 bool enabled = true;
 bool debug = false;
+```
 
 ### 23. Null
 
@@ -565,7 +595,9 @@ null
 
 Например:
 
+```AZONE
 Player player = null;
+```
 
 Точная семантика `null` будет определена системой типов.
 
@@ -629,8 +661,10 @@ Player player = null;
 
 Пример:
 
+```AZONE
 player.name
 player.move()
+```
 
 Доступ к статическому члену:
 
@@ -707,9 +741,11 @@ Highest
 
 Пример:
 
+```AZONE
 if (value > 10) {
 	print("Large");
 }
+```
 
 Блок создает область видимости.
 
@@ -732,12 +768,14 @@ else {
 
 Пример:
 
+```AZONE
 if (value > 10) {
 	print("Large");
 }
 else {
 	print("Small");
 }
+```
 
 ### 31. Цикл while
 
@@ -747,12 +785,14 @@ while (condition) {
 
 Пример
 
+```AZONE
 int i = 0;
 
 while (i < 10) {
 	print(i);
 	i++;
 }
+```
 
 ### 32. Цикл for
 
@@ -764,9 +804,11 @@ for (initialization; condition; increment) {
 
 Пример:
 
+```AZONE
 for (int i = 0; i < 10; i++) {
 	print(i);
 }
+```
 
 ### 33. Break и continue
 
@@ -775,6 +817,7 @@ continue;
 
 Пример:
 
+```AZONE
 while (true) {
 	if (condition){
 		break;
@@ -782,6 +825,7 @@ while (true) {
 
 	continue;
 }
+```
 
 ### 34. Return
 
@@ -793,7 +837,9 @@ return expression;
 
 Пример:
 
+```AZONE
 return value;
+```
 
 ### 35. Объявление переменной
 
@@ -803,21 +849,27 @@ Type name;
 
 Пример:
 
+```AZONE
 int32 value;
 string name;
 bool enabled;
+```
 
 С инициализацией:
 
+```AZONE
 int32 value = 100;
 string name = "AZONE";
 bool enabled = true;
+```
 
 ### 36. Константные значения
 
 Предусматривается:
 
+```AZONE
 const int32 MAX = 100;
+```
 
 `const` означает, что значение не может быть изменено после инициализации.
 
@@ -833,23 +885,29 @@ returnType functionName(parameters){
 
 Пример:
 
+```AZONE
 int32 add(int32 a, int32 b) {
 	return a + b;
 }
+```
 
 Функция без возвращаемого значения:
 
+```AZONE
 void hello() {
 	print("Hello!");
 }
+```
 
 ### 38. Параметры функций
 
 Параметры объявляются следующим образом:
 
+```AZONE
 int32 add(int32 a, int32 b) { 
 	return a + b; 
 }
+```
 
 Каждый параметр должен иметь явно указанный тип.
 
@@ -857,11 +915,15 @@ int32 add(int32 a, int32 b) {
 
 ### 39. Вызов функции
 
+```AZONE
 add(10, 20);
+```
 
 Результат вызова может использоваться в выражении:
 
+```AZONE
 int32 result = add(10, 20) * 2;
+```
 
 ### 40. Пространства имён
 
@@ -873,15 +935,19 @@ namespace Example {
 
 Пример:
 
+```AZONE
 namespace Math { 
 	int32 add(int32 a, int32 b) { 
 		return a + b; 
 	} 
 }
+```
 
 Использование:
 
+```AZONE
 Math.add(10, 20);
+```
 
 Точная система модулей и пространств имён будет разработана отдельно.
 
@@ -889,11 +955,15 @@ Math.add(10, 20);
 
 Для подключения другого модуля предусматривается:
 
+```AZONE
 import Math;
+```
 
 или:
 
+```AZONE
 import Math.Vector;
+```
 
 Точный формат путей и модулей будет определён в Specification 0.4.
 
@@ -901,9 +971,11 @@ import Math.Vector;
 
 Минимальная программа может выглядеть следующим образом:
 
+```AZONE
 void main() { 
 	print("Hello, AZONE!"); 
 }
+```
 
 `main` рассматривается как специальная точка входа программы.
 
@@ -911,6 +983,7 @@ void main() {
 
 ### 43. Пример программы
 
+```AZONE
 void main() { 
 	string name = "AZONE"; 
 	int32 counter = 0; 
@@ -919,6 +992,7 @@ void main() {
 		counter++; 
 	} 
 }
+```
 
 Ожидаемый вывод:
 
@@ -1109,8 +1183,8 @@ identifier ::= Identifier ;
 
 Каждая спецификация должна иметь версию:
 
-0.1 
-0.2 
+[[Specification 0.1 |0.1]] 
+[[Specification 0.2 |0.2 ]]
 0.3 
 ... 
 1.0
@@ -1149,7 +1223,7 @@ identifier ::= Identifier ;
 
 Следующая спецификация должна определить **систему типов и выражений**:
 
-AZONE LANG Specification 0.3
+[[Specification 0.3 |AZONE LANG Specification 0.3]]
 
 В неё войдут:
 
