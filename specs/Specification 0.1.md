@@ -1,4 +1,4 @@
-# AZONE LANG
+# AZONE LANG Specification 0.1
 ## Техническое задание на разработку языка программирования
 
 **Кодовое название**: AZONE LANG

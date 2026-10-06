@@ -892,7 +892,7 @@ class Vector2 {
 }
 ```
 
-Точный синтаксис будет утверждён в спецификации объектной модели.
+Точный синтаксис будет утверждён в спецификации [[Specification 0.4  |объектной модели]].
 
 ### 42. Перегрузка функций
 
@@ -1173,7 +1173,7 @@ VM value representation
 
 Следующей должна стать:
 
-# AZONE LANG Specification 0.4
+# [[Specification 0.4 |AZONE LANG Specification 0.4]]
 
 ## Object Model, Classes & Modules
 

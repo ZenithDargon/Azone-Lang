@@ -965,7 +965,7 @@ import Math;
 import Math.Vector;
 ```
 
-Точный формат путей и модулей будет определён в Specification 0.4.
+Точный формат путей и модулей будет определён в [[Specification 0.4]].
 
 ### 42. Минимальная программа
 
@@ -1185,7 +1185,7 @@ identifier ::= Identifier ;
 
 [[Specification 0.1 |0.1]] 
 [[Specification 0.2 |0.2 ]]
-0.3 
+[[Specification 0.3 |0.3]] 
 ... 
 1.0
 
@@ -1247,7 +1247,7 @@ identifier ::= Identifier ;
 
 После этого уже можно будет перейти к:
 
-Specification 0.4 — Modules & Object Model 
+[[Specification 0.4 |Specification 0.4 — Modules & Object Model ]]
 Specification 0.5 — Memory Model 
 Specification 0.6 — Bytecode 
 Specification 0.7 — Virtual Machine 
