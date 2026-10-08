@@ -1486,7 +1486,7 @@ Source diagnostics:    mandatory
 
 [[Specification 0.4 |Specification 0.4 — Modules & Object Model ]]
 [[Specification 0.5 |Specification 0.5 — Memory Model ]]
-Specification 0.6 — Bytecode 
+[[Specification 0.6 |Specification 0.6 — Bytecode]]
 Specification 0.7 — Virtual Machine 
 Specification 0.8 — Extension System (.azm)
 
