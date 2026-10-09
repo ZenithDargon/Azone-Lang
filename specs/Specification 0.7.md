@@ -1742,11 +1742,10 @@ VM должна иметь автоматические тесты как мин
 
 # 75. Следующая спецификация
 
-## Specification 0.8 — AZM Compiler Extension System
-
+## [[Specification 0.8 |Specification 0.8 — AZM Compiler Extension System]]
 Следующий этап посвящён `.azm` — расширениям компилятора.
 
-В Specification 0.8 необходимо определить:
+В [[Specification 0.8]] необходимо определить:
 
 - формат `.azm`;
 - загрузчик расширений;
