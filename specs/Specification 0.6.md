@@ -2430,7 +2430,7 @@ ABI Adapter
 Native Representation
 ```
 
-Преобразование должно учитывать Specification 0.5.
+Преобразование должно учитывать [[Specification 0.5]].
 
 ---
 
@@ -2689,7 +2689,7 @@ VM
 # 113. Следующая спецификация
 
 Следующая спецификация:
-## Specification 0.7 — AZONE VM Execution Model
+## [[Specification 0.7 |Specification 0.7 — AZONE VM Execution Model]]
 
 Она должна определить непосредственно устройство виртуальной машины:
 
@@ -2712,7 +2712,7 @@ VM
 └── Runtime State
 ```
 
-Также в 0.7 необходимо определить:
+Также в [[Specification 0.7 |0.7]] необходимо определить:
 
 - жизненный цикл VM;
 - создание и уничтожение VM;

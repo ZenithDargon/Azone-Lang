@@ -1475,7 +1475,7 @@ object identity
 
 [[Specification 0.5 |0.5 — Memory Model & ABI ]]
 [[Specification 0.6 |0.6 — Bytecode Specification]] 
-0.7 — Virtual Machine Specification 
+[[Specification 0.7 |0.7 — Virtual Machine Specification ]]
 0.8 — Extension System (.azm) 
 0.9 — Native API / OS Integration 
 1.0 — Core Language Specification
